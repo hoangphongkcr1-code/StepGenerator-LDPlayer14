@@ -1,0 +1,15 @@
+StepGeneratorDiagnostic/
+├── .github/
+│   └── workflows/
+│       └── build-apk.yml
+├── app/
+│   ├── build.gradle
+│   └── src/
+│       └── main/
+│           ├── AndroidManifest.xml
+│           └── java/
+│               └── com/example/stepgenerator/
+│                   └── MainActivity.java
+├── build.gradle
+├── gradle.properties
+└── settings.gradle
