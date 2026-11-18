@@ -1,15 +1,19 @@
-StepGeneratorDiagnostic/
-├── .github/
-│   └── workflows/
-│       └── build-apk.yml
-├── app/
-│   ├── build.gradle
-│   └── src/
-│       └── main/
-│           ├── AndroidManifest.xml
-│           └── java/
-│               └── com/example/stepgenerator/
-│                   └── MainActivity.java
-├── build.gradle
-├── gradle.properties
-└── settings.gradle
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "StepGeneratorDiagnostic"
+include(":app")
